@@ -3,9 +3,11 @@ package com.example.administrator.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import static com.example.administrator.myapplication.R.*;
@@ -21,6 +23,7 @@ public class LoginPage extends AppCompatActivity{
 
     EditText username;
     EditText password;
+    TextView signup;
 
     private Button login_btn;
 
@@ -35,18 +38,21 @@ public class LoginPage extends AppCompatActivity{
         password = findViewById(id.password);
         login_btn = findViewById(id.login_btn);
 
+        signup = findViewById(id.textSignUp);
 
-//        login_btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                new AlertDialog.Builder(LoginPage.this)
-//                        .setTitle("提示")
-//                        .setMessage("登陆成功！")
-//                        .setPositiveButton("确定",null)
-//                        .show();
-//            }
-//        });
+        // 注册按钮
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(LoginPage.this,"跳转到注册",Toast.LENGTH_SHORT);
 
+                Intent intent_to_sign_up_page = new Intent(LoginPage.this,SignUpPage.class);
+                startActivity(intent_to_sign_up_page);
+            }
+        });
+
+
+        // 登录按钮
         login_btn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 // 保存用户输入的数据用户名和密码
@@ -65,7 +71,6 @@ public class LoginPage extends AppCompatActivity{
 
 
                     // 创建Bundle绑定信息
-
                     Bundle bundle = new Bundle();
                     bundle.putString("username",var_username);
                     bundle.putString("password",var_password);
@@ -76,6 +81,7 @@ public class LoginPage extends AppCompatActivity{
                     startActivity(intent);
                 }else if(var_username.equals("") || var_password.equals("")){
                     Toast.makeText(LoginPage.this,"账号或密码错误为空，请重新输入",Toast.LENGTH_SHORT).show();
+//                    Log.d("Tag","跳转成功");
                 }else{
                     Toast.makeText(LoginPage.this,"账号或密码错误错误，登陆失败",Toast.LENGTH_SHORT).show();
                 }

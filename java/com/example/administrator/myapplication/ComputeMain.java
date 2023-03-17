@@ -5,7 +5,7 @@ import android.os.Bundle;
 import static com.example.administrator.myapplication.R.*;
 
 
-public class MainActivity extends AppCompatActivity{
+public class ComputeMain extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

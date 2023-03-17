@@ -98,11 +98,13 @@
             android:text="Forget Password?" />
 
         <TextView
+            android:id="@+id/textSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="155sp"
             android:layout_marginTop="5sp"
-            android:text="Sign up" />
+            android:text="Sign up"
+            android:clickable="true"/>
 
     </LinearLayout>
 

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <!--计算器界面-->
+        <activity android:name=".ComputeMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +20,7 @@
         </activity>
 
 
-
+        <!--成功登录界面-->
         <activity android:name=".SuccessLoginPage"
             android:exported="true"></activity>
         <activity android:name=".LoginPage">
@@ -29,7 +31,7 @@
             </intent-filter>
         </activity>
 
-
+        <!--listview界面-->
         <activity android:name=".ListViewMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,6 +40,7 @@
             </intent-filter>
         </activity>
 
+        <!--数据库测试界面-->
         <activity android:name="DatabaseTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,6 +48,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--登录界面-->
+        <activity android:name="SignUpPage">
+            <!--android:windowSoftInputMode="stateVisible|adjustResize"-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
 
 
 
