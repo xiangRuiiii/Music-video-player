@@ -3,3 +3,13 @@
 3. git rm --cached <filename>
 4. git commit -m "describtion"
 4. git push -u origin main
+
+
+# 上传文件
+1. 在需要上传的文件夹下 git bash here 
+2. git init
+3. git clone <url> // url是要上传到的仓库地址
+4. git add .  (git add <filename>)
+5. git commit -m "discribtion"
+6. git remote add origin <url>
+7. git push -u origin <master>
