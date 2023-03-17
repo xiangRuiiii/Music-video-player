@@ -1,1 +1,5 @@
-11
+1. git init // 初始化本地仓库
+2. git clone <url>  // url 是要删除文件所在的目录
+3. git rm --cached <filename>
+4. git commit -m "describtion"
+4. git push -u origin main
