@@ -26,7 +26,7 @@
             android:id="@+id/textUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="用户名"/>
@@ -41,7 +41,18 @@
         android:id="@+id/textPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
         android:text="密码"/>
+
+
+
+
+    <EditText
+        android:id="@+id/editNickName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="设置昵称"/>
 
 
     <Button
@@ -50,6 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="返回"/>
+
 
 
 </LinearLayout>

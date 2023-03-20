@@ -3,7 +3,6 @@ package com.example.administrator.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,6 +22,7 @@ public class LoginPage extends AppCompatActivity{
 
     EditText username;
     EditText password;
+    TextView nickname;
     TextView signup;
 
     private Button login_btn;
@@ -36,6 +36,8 @@ public class LoginPage extends AppCompatActivity{
         // 利用布局文件设置用户界面
         username = findViewById(id.account);
         password = findViewById(id.password);
+        nickname = findViewById(id.textNickName);
+
         login_btn = findViewById(id.login_btn);
 
         signup = findViewById(id.textSignUp);
@@ -89,6 +91,12 @@ public class LoginPage extends AppCompatActivity{
 
             }
         });
+
+
+        Intent getNickNameIntent = getIntent();
+        String NickName = getNickNameIntent.getStringExtra("nickname");
+
+        nickname.setText(NickName);
 
 
 
