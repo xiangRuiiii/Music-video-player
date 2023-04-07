@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutSignUp"
+    android:background="@drawable/qianse_background">
+
+    <TextView
+        android:id="@+id/textSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册账号"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:id="@+id/editAccount"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textSign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:hint="输入账号"
+        android:textAlignment="center"
+        android:textSize="24dp" />
+
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/editAccount"
+        android:layout_below="@+id/editAccount"
+        android:layout_marginTop="30dp"
+        android:hint="输入密码"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="注册"
+        android:textSize="25dp"
+        android:onClick="onClick"
+        android:layout_below="@id/editPassword"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

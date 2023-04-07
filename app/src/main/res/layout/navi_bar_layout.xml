@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3">
+    
+    
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+
+    <TableLayout
+        android:id="@+id/ll_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:stretchColumns="0,2">
+
+       <TableRow
+
+           android:background="@color/colorNavigation">
+
+           <ImageView
+               android:id="@+id/imageView_music"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_gravity="center"
+               android:src="@drawable/music"
+               android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/imageView_love"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/love"
+                android:clickable="true"/>
+
+           <ImageView
+               android:id="@+id/imageView_video"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_gravity="center"
+               android:src="@drawable/video"
+               android:clickable="true"/>
+
+       </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
